@@ -4,7 +4,7 @@
 
 ## Origin and licensing
 
-The suite was developed mainly by Mark van Schilfgaarde and collaborators at King's College London, with contributors including Dimitar Pashov, Swagata Acharya, Walter R. L. Lambrecht, Jerome Jackson, Kirill D. Belashchenko, Athanasios Chantis, and Francois Jamet. The main reference is a 2020 paper in *Computer Physics Communications* titled "Questaal: A package of electronic structure methods based on the linear muffin-tin orbital technique." The code is released under the GNU General Public License, version 3. Its implementation is mostly Fortran, with some C, Python, and shell scripting.
+The suite was developed mainly by Mark van Schilfgaarde and collaborators at King's College London, with contributors including Dimitar Pashov, Swagata Acharya, Walter R. L. Lambrecht, Jerome Jackson, Kirill D. Belashchenko, Athanasios Chantis, and Francois Jamet. The main reference is a 2020 paper in [*Computer Physics Communications*](http://dx.doi.org/10.1016/j.cpc.2019.107065) titled "Questaal: A package of electronic structure methods based on the linear muffin-tin orbital technique." The code is released under the GNU General Public License, version 3. Its implementation is mostly Fortran, with some C, Python, and shell scripting.
 
 ## The underlying method
 
