@@ -88,16 +88,20 @@ $$
 \end{cases}
 $$
 
-Here $\Omega$ is the unit-cell volume, $\mathbf{r}_\alpha = \mathbf{r} - \boldsymbol{\tau}_\alpha$, and $Y_{lm}$ are real or complex spherical harmonics.
+Here $\Omega$ is the unit-cell volume, $\mathbf{r} _ \alpha = \mathbf{r} - \boldsymbol{\tau} _ \alpha$, and $Y _ {lm}$ are real or complex spherical harmonics.
 
 The coefficients $A_{lm}$ are fixed by requiring continuity of the wavefunction at $r_\alpha = R_\alpha$. Using the Rayleigh plane-wave expansion
+
 $$
 e^{i\mathbf{q}\cdot\mathbf{r}} = 4\pi \sum_{lm} i^l\, j_l(qr)\, Y^*_{lm}(\hat{\mathbf{q}})\, Y_{lm}(\hat{\mathbf{r}}),
-$$
+$$ 
+
 one finds
+
 $$
 A_{lm}(\mathbf{q}) = \frac{4\pi\, i^l\, Y^*_{lm}(\hat{\mathbf{q}})\, j_l(qR)}{u_l(R, E)}\, \cdot \frac{1}{\sqrt{\Omega}}.
 $$
+
 Here $j_l$ is the spherical Bessel function.
 
 **The energy problem.** The basis functions depend explicitly on the energy $E$ through $u_l(R,E)$. The Hamiltonian and overlap matrices therefore depend on $E$, and the eigenvalue problem takes the nonlinear form
@@ -153,7 +157,7 @@ where $K_{\max}$ is the largest plane-wave wavevector included. Typical producti
 The muffin-tin approximation is removed in **full-potential** methods. The potential and charge density are expanded in lattice harmonics inside the spheres and in plane waves in the interstitial:
 
 $$
-V(\mathbf{r}) = \sum_{lm} V_{lm}(r)\, Y_{lm}(\hat{\mathbf{r}}_\alpha) \quad (r_\alpha < R_\alpha), \qquad V(\mathbf{r}) = \sum_{\mathbf{G}} V_{\mathbf{G}}\, e^{i\mathbf{G}\cdot\mathbf{r}} \quad (\text{interstitial}).
+V(\mathbf{r}) = \sum_{lm} V_{lm}(r)\, Y_{lm}(\hat{\mathbf{r}} _ \alpha) \quad (r_\alpha < R_\alpha), \qquad V(\mathbf{r}) = \sum_{\mathbf{G}} V_{\mathbf{G}}\, e^{i\mathbf{G}\cdot\mathbf{r}} \quad (\text{interstitial}).
 $$
 
 The full-potential LAPW (FLAPW) method, implemented in WIEN2k, FLEUR, and exciting, is considered the most accurate general-purpose all-electron approach for solids. Its cost is higher, and the non-spherical terms require careful treatment of the potential matching at the sphere boundary.
