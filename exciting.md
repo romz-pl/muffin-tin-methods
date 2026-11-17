@@ -2,7 +2,7 @@
 
 ## 1. What exciting is
 
-[exciting(https://github.com/exciting/exciting) is an open-source, all-electron, full-potential electronic structure package for first-principles calculations based on the (linearized) augmented plane-wave plus local-orbital, (L)APW+lo, method. It implements density-functional theory (DFT) in its Kohn-Sham form and a set of many-body and excited-state methods built on top of the ground state. The code is distributed under the GNU General Public License (GPL), is developed by an international academic team (the "exciting team") and is written mainly in Fortran.
+[exciting](https://github.com/exciting/exciting) is an open-source, all-electron, full-potential electronic structure package for first-principles calculations based on the (linearized) augmented plane-wave plus local-orbital, (L)APW+lo, method. It implements density-functional theory (DFT) in its Kohn-Sham form and a set of many-body and excited-state methods built on top of the ground state. The code is distributed under the GNU General Public License (GPL), is developed by an international academic team (the "exciting team") and is written mainly in Fortran.
 
 The project grew out of the EXCITING EU Research and Training Network, in which Dewhurst, Sharma, Ambrosch-Draxl and collaborators in Graz were central. Its sibling code Elk, written at Karl-Franzens-Universität Graz as a deliberately simplified implementation of the same method, shares much of the same heritage. exciting is the larger, more feature-rich of the two and is aimed at production work on advanced electronic properties.
 
