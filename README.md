@@ -13,10 +13,16 @@ Consider a periodic crystal with lattice vectors $\mathbf{R}$ and a one-electron
 The muffin-tin approximation partitions real space into two regions:
 
 1. **Muffin-tin spheres.** Non-overlapping spheres of radius $R_\alpha$ centred on each atomic site $\alpha$. Inside each sphere the potential is taken to be spherically symmetric:
-$$V(\mathbf{r}) \approx V_\alpha(r), \qquad r = |\mathbf{r} - \boldsymbol{\tau}_\alpha| < R_\alpha.$$
+   
+$$
+V(\mathbf{r}) \approx V_\alpha(r), \qquad r = |\mathbf{r} - \boldsymbol{\tau}_\alpha| < R_\alpha.
+$$
 
 2. **The interstitial region.** The space outside all spheres, where the potential is taken to be constant:
-$$V(\mathbf{r}) \approx V_0.$$
+   
+$$
+V(\mathbf{r}) \approx V_0.
+$$
 
 Conventionally $V_0$ is set to zero (or to a constant that absorbs the average interstitial potential), so that the interstitial region is effectively free-electron-like.
 
@@ -57,7 +63,10 @@ The energy derivative of the radial function, $\dot u_l(r,E) = \partial u_l/\par
 ### 3.2 Bloch's Theorem
 
 Because the potential is periodic, Bloch's theorem guarantees that eigenfunctions take the form
-$$\psi_{\mathbf{k}}(\mathbf{r}) = e^{i\mathbf{k}\cdot\mathbf{r}}\, u_{\mathbf{k}}(\mathbf{r}), \qquad u_{\mathbf{k}}(\mathbf{r} + \mathbf{R}) = u_{\mathbf{k}}(\mathbf{r}).$$
+
+$$
+\psi_{\mathbf{k}}(\mathbf{r}) = e^{i\mathbf{k}\cdot\mathbf{r}}\, u_{\mathbf{k}}(\mathbf{r}), \qquad u_{\mathbf{k}}(\mathbf{r} + \mathbf{R}) = u_{\mathbf{k}}(\mathbf{r}).
+$$
 
 The calculation therefore reduces to a single unit cell and a set of $\mathbf{k}$-points in the Brillouin zone.
 
@@ -92,25 +101,33 @@ $$
 Here $j_l$ is the spherical Bessel function.
 
 **The energy problem.** The basis functions depend explicitly on the energy $E$ through $u_l(R,E)$. The Hamiltonian and overlap matrices therefore depend on $E$, and the eigenvalue problem takes the nonlinear form
+
 $$
 \det\big[\, H(E) - E\, S(E) \,\big] = 0.
 $$
+
 Solutions are found by root-finding in $E$ for each band and each $\mathbf{k}$-point. This is cumbersome, and near the energies where $u_l(R,E)$ vanishes the basis becomes ill-conditioned, producing spurious "ghost" states and a variational instability known as the *asymptote problem*.
 
 ### 4.2 Linearised Augmented Plane Wave (LAPW)
 
 Andersen (1975) and related work by Koelling and Arbman (1975) addressed the energy-dependence problem by linearising the radial functions around a fixed reference energy $E_l$ for each angular momentum:
+
 $$
 u_l(r, E) \approx u_l(r, E_l) + (E - E_l)\, \dot u_l(r, E_l).
 $$
+
 The LAPW basis functions inside the sphere become
+
 $$
 \sum_{lm} \Big[ A_{lm}\, u_l(r_\alpha, E_l) + B_{lm}\, \dot u_l(r_\alpha, E_l) \Big] Y_{lm}(\hat{\mathbf{r}}_\alpha),
 $$
+
 with coefficients $A_{lm}$ and $B_{lm}$ fixed by matching both the value and the derivative of the radial function at $R_\alpha$ to the plane wave. Since the basis no longer depends on $E$, the problem becomes a **generalised linear eigenvalue problem**
+
 $$
 H\mathbf{c} = E\, S\mathbf{c},
 $$
+
 solvable with standard linear-algebra routines in a single pass.
 
 The LAPW method is accurate for energies within a window around $E_l$, with errors of order $(E - E_l)^2$, and is the foundation of the most widely used all-electron electronic structure method.
@@ -124,9 +141,11 @@ The APW+lo method combines the energy-dependent APW for valence states with loca
 ### 4.4 Convergence Parameters
 
 LAPW convergence is controlled primarily by the dimensionless parameter
+
 $$
 R_{\mathrm{MT}} K_{\max},
 $$
+
 where $K_{\max}$ is the largest plane-wave wavevector included. Typical production values lie between 7 and 9. Additional parameters include the maximum angular momentum $l_{\max}$ inside the spheres, the number of $\mathbf{k}$-points, and the radial mesh density.
 
 ## 5. Full-Potential Extensions
