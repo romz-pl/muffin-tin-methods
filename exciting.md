@@ -6,7 +6,7 @@
 
 The project grew out of the EXCITING EU Research and Training Network, in which Dewhurst, Sharma, Ambrosch-Draxl and collaborators in Graz were central. Its sibling code Elk, written at Karl-Franzens-Universität Graz as a deliberately simplified implementation of the same method, shares much of the same heritage. exciting is the larger, more feature-rich of the two and is aimed at production work on advanced electronic properties.
 
-Release names have followed chemical elements. The first official release was called *hydrogen*, followed by *beryllium* (installed on several HPC systems in 2014) and later *neon*, whose documentation carries copyright notices from 2002 to 2023. Because the code is actively developed, the current release and its feature list should always be checked on the official site, exciting-code.org.
+Release names have followed chemical elements. The first official release was called *hydrogen*, followed by *beryllium* (installed on several HPC systems in 2014) and later *neon*, whose documentation carries copyright notices from 2002 to 2023. Because the code is actively developed, the current release and its feature list should always be checked on [the official site](https://exciting-code.org/).
 
 ## 2. The method: (L)APW+lo
 
