@@ -10,7 +10,7 @@ Muffin-tin methods were the workhorse of band-structure calculations from the 19
 + [Elk](./elk.md),
 + [exciting](./exciting.md),
 + [FLEUR](./fleur.md),
-+ Questaal,
++ [Questaal](./questaal.md),
 + and the KKR codes (Akai-KKR, SPR-KKR).
 
 ## 2. The Muffin-Tin Approximation
