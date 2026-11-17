@@ -4,7 +4,14 @@
 
 Muffin-tin methods are a family of techniques in computational solid-state physics and quantum chemistry for solving the one-electron Schrödinger (or Kohn-Sham) equation in crystals. They rest on a geometric and physical idealisation of the crystal potential, the **muffin-tin approximation (MTA)**, and on the construction of basis functions adapted to that idealisation. The name comes from the resemblance of the potential's shape, a set of spherical wells surrounded by a flat plateau, to the cavities of a muffin tin baking pan.
 
-Muffin-tin methods were the workhorse of band-structure calculations from the 1930s through the 1980s and remain widely used today, in refined forms, in codes such as WIEN2k, Elk, exciting, FLEUR, Questaal, and the KKR codes (Akai-KKR, SPR-KKR).
+Muffin-tin methods were the workhorse of band-structure calculations from the 1930s through the 1980s and remain widely used today, in refined forms, in codes such as:
+
++ [WIEN2k](./wien2k.md),
++ Elk,
++ exciting,
++ FLEUR,
++ Questaal,
++ and the KKR codes (Akai-KKR, SPR-KKR).
 
 ## 2. The Muffin-Tin Approximation
 
