@@ -7,7 +7,7 @@ Muffin-tin methods are a family of techniques in computational solid-state physi
 Muffin-tin methods were the workhorse of band-structure calculations from the 1930s through the 1980s and remain widely used today, in refined forms, in codes such as:
 
 + [WIEN2k](./wien2k.md),
-+ Elk,
++ [Elk](./elk.md),
 + exciting,
 + FLEUR,
 + Questaal,
